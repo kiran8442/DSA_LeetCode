@@ -18,7 +18,7 @@ public:
                     st = mid + 1;
             }
             else{ // right sorted
-                if(nums[mid] < target && nums[end] >= target)
+                if(nums[mid] <= target && nums[end] >= target)
                     st = mid + 1;
                 else
                     end = mid - 1;
